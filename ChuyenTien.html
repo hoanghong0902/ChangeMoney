@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển Đổi Tiền Tệ</title>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <th>Amount</th>
+                <th>From Currency</th>
+                <th>To Currency</th>
+            </tr>
+            <tr>
+                <td><input type="text" id="amount"></td>
+                <td>
+                    <select id="From">
+                        <option value="VND">Việt Nam</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </td>
+                <td>
+                    <select id="To">
+                        <option value="USD">USD</option>
+                        <option value="VND">Việt Nam</option>
+                    </select>
+                </td>
+                <td><button type="button" name="submit" onclick="changeMoney();">Convert</button></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <p id="result"></p>
+    <script src="./tiente.js"></script>
+</body>
+</html>
